@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <main class="mainWrapper">
+      <section class="contentWrapper">
+        <img
+          id="imgProduct"
+          src="./images/image-product-mobile.jpg"
+          alt="productImg"
+        />
+
+        <div class="textWrapper">
+          <div class="heading">
+            <p>PERFUME</p>
+            <h1>Gabrielle Essence Eau De Parfum</h1>
+          </div>
+
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+
+          <div class="price">
+            <p>$149.99</p>
+            <p>$169.99</p>
+          </div>
+
+          <div class="addToCartBtn">
+            <img src="./images/icon-cart.svg" alt="addToCartIcon" />
+            <p>Add to Cart</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="attribution">
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >
+        </p>
+        <p>Coded by <a href="https://x.com/Armaan2Saini">SaeneArmaan</a></p>
+      </div>
+    </main>
+
+    <script>
+      const image = document.getElementById("imgProduct");
+
+      window.addEventListener("DOMContentLoaded", (event) => {
+        if (document.documentElement.clientWidth > 999) {
+          image.setAttribute("src", "./images/image-product-desktop.jpg");
+        } else if (document.documentElement.clientWidth < 999) {
+          image.setAttribute("src", "./images/image-product-mobile.jpg");
+        }
+      });
+
+      window.addEventListener("resize", (event) => {
+        if (event.target.innerWidth > 999) {
+          image.setAttribute("src", "./images/image-product-desktop.jpg");
+        } else if (event.target.innerWidth < 999) {
+          image.setAttribute("src", "./images/image-product-mobile.jpg");
+        }
+      });
+    </script>
+  </body>
+</html>
