@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/SaeneArmaan/Product-Preview-Card-Component.git)
-- Live Site URL: [Live URL](https://your-live-site-url.com)
+- Live Site URL: [Live URL](https://product-preview-card-saenearmaan.netlify.app/)
 
 ### Built with
 
